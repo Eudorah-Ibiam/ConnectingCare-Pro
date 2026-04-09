@@ -1,0 +1,158 @@
+Build a full professional healthcare web platform for online doctor consultation and a medical equipment marketplace.
+
+The platform should allow users to:
+- Consult doctors from different medical departments  
+- Book appointments  
+- Purchase medical equipment online  
+- Monitor health data using smart medical devices  
+
+The website must be built using HTML, CSS, and JavaScript (in separate files) and should feature a modern, responsive, and interactive design suitable for a professional portfolio project.
+
+
+ Core Requirements
+
+ 1. Responsive Design
+- The website must work seamlessly on desktop, tablet, and mobile devices
+- Implement a responsive navigation system
+- Display a hamburger menu (☰) only on small screens and hide it on larger screens
+
+
+ 2. Professional UI Design
+- Modern health-tech color scheme
+- Clean layout with proper spacing and shadows
+- Smooth hover animations on cards and buttons
+- Large, visually appealing hero section
+- Professional logo and brand name
+- Use high-quality, realistic healthcare images
+
+---
+
+ 3. Navigation Sections
+- Home  
+- Departments  
+- Doctors  
+- Medical Equipment Store  
+- Login / Register  
+- Contact  
+
+---
+
+ 4. Doctor Consultation System
+- Display doctors across departments such as:
+  - Cardiology  
+  - Pediatrics  
+  - Dermatology  
+  - Orthopedics  
+
+Each doctor profile should include:
+- Doctor image  
+- Name  
+- Specialty  
+- “Book Consultation” button  
+
+Include a doctor booking calendar system where users can:
+- Select a date  
+- Select a time  
+- Confirm appointment  
+
+
+ 5. Online Video Consultation
+- Provide a basic video consultation interface for real-time doctor-patient communication  
+- Include camera and microphone access (simulation or basic implementation)
+
+---
+
+ 6. Medical Equipment Store
+Display products such as:
+- Blood pressure monitors  
+- Thermometers  
+- Stethoscopes  
+- Wheelchairs  
+
+Each product must include:
+- Image  
+- Price  
+- “Add to Cart” button  
+
+---
+
+### 7. Shopping Cart System
+- Implement a functional shopping cart using JavaScript
+- Users can:
+  - Add items  
+  - Remove items  
+  - View total price  
+- Store cart data using localStorage
+
+---
+
+### 8. Authentication System
+- Create Login and Registration pages
+- Implement form validation using JavaScript
+- Store user data locally (for demo purposes)
+
+---
+
+### 9. Payment System
+- Simulate a checkout process
+- Display confirmation after payment
+
+---
+
+### 10. Admin Dashboard
+Create an admin panel to manage:
+- Doctors  
+- Appointments  
+- Equipment/products  
+- Orders  
+- Users  
+
+Include basic statistics such as:
+- Total users  
+- Appointments  
+- Orders  
+
+---
+
+### 11. Contact Section
+Include clickable contact icons:
+- Phone  
+- WhatsApp  
+- Email  
+
+---
+
+### 12. Interactivity
+- Smooth scrolling between sections  
+- Button animations  
+- Hover effects  
+- Cart notifications  
+
+---
+
+### 13. Project Structure
+- Use separate files for HTML, CSS, and JavaScript
+- Organize into folders:
+  - /css  
+  - /js  
+  - /images  
+
+ Advanced Feature (Smart BP Monitoring System)
+
+Include a smart blood pressure (BP) tracking feature:
+
+- The platform should support a BP monitoring device with a barcode/ID system
+- When a patient purchases the BP device:
+  - The device is linked to the patient’s account via a unique barcode or ID
+- The device records the patient’s blood pressure
+- If the BP reading is:
+  - Too high or too low  
+  → The system automatically sends an alert to the platform
+
+- The system should:
+  - Identify the patient  
+  - Notify the healthcare provider  
+  - Allow doctors to review the patient’s condition  
+
+This feature simulates a remote patient monitoring system, similar to modern telemedicine platforms.
+

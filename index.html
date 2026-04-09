@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ConnectingCare Pro & Medical Equipment</title>
+
+<link rel="stylesheet" href="./styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+      <span class="logo-text">Connecting<span>Care</span> Pro</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#smart-monitor">Smart Monitor</a></li>
+      <li><a href="#shop">Equipment</a></li>
+      <li><a href="#why">About Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <div class="cart-wrap" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart" style="font-size:18px; color:var(--navy);"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </div>
+      </li>
+      <li><a href="#contact" class="btn-nav">Book Appointment</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#departments" onclick="toggleMenu()"><i class="fas fa-hospital" style="margin-right:8px;color:var(--teal)"></i> Departments</a>
+  <a href="#smart-monitor" onclick="toggleMenu()"><i class="fas fa-heartbeat" style="margin-right:8px;color:var(--teal)"></i> Smart Monitor</a>
+  <a href="#shop" onclick="toggleMenu()"><i class="fas fa-stethoscope" style="margin-right:8px;color:var(--teal)"></i> Equipment Shop</a>
+  <a href="#why" onclick="toggleMenu()"><i class="fas fa-info-circle" style="margin-right:8px;color:var(--teal)"></i> About Us</a>
+  <a href="#testimonials" onclick="toggleMenu()"><i class="fas fa-star" style="margin-right:8px;color:var(--teal)"></i> Reviews</a>
+  <a href="#contact" onclick="toggleMenu()"><i class="fas fa-phone" style="margin-right:8px;color:var(--teal)"></i> Contact</a>
+  <a href="#contact" class="btn-mobile" onclick="toggleMenu()"><i class="fas fa-calendar-check" style="margin-right:8px;"></i> Book Appointment</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge fade-up"><i class="fas fa-shield-alt"></i> Nigeria's Trusted Healthcare Platform</div>
+      <h1 class="fade-up delay-1">Expert Care,<br>At Your <em>Fingertips</em></h1>
+      <p class="fade-up delay-2">Connect with top specialists across 10+ medical departments. Book consultations, access telemedicine, and purchase premium medical equipment all in one place.</p>
+      <div class="hero-btns fade-up delay-3">
+        <a href="#departments" class="btn-primary"><i class="fas fa-user-md"></i> Find a Doctor</a>
+        <a href="#shop" class="btn-secondary"><i class="fas fa-shopping-bag"></i> Shop Equipment</a>
+      </div>
+      <div class="hero-stats fade-up delay-3">
+        <div class="stat"><h3>200+</h3><p>Specialists</p></div>
+        <div class="stat"><h3>50k+</h3><p>Patients Served</p></div>
+        <div class="stat"><h3>4.9★</h3><p>Average Rating</p></div>
+      </div>
+    </div>
+    <div class="hero-img fade-up delay-2">
+      <div class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="Modern Hospital" loading="lazy">
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-icon"><i class="fas fa-calendar-check"></i></div>
+        <div>
+          <h4>Easy Booking</h4>
+          <p>Get confirmed in minutes</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SMART MONITOR SECTION -->
+<section id="smart-monitor">
+  <div class="section-inner" style="position:relative;z-index:1;">
+
+    <!-- Intro -->
+    <div class="smart-intro">
+      <div class="smart-intro-text">
+        <div class="section-label"><i class="fas fa-circle" style="font-size:6px"></i> SmartCare Technology</div>
+        <h2 class="section-title" style="color:white;">Your BP Machine,<br>Connected to <span style="color:var(--teal)">Your Doctor</span></h2>
+        <p>Every MedCare BP device comes embedded with smart connectivity. Scan the QR code, link it to your account, and every reading you take instantly appears on your app with a dedicated doctor monitoring you in real time.</p>
+        <div class="smart-badges">
+          <div class="smart-badge"><i class="fas fa-wifi"></i> Real-Time Sync</div>
+          <div class="smart-badge"><i class="fas fa-user-md"></i> Doctor On Standby</div>
+          <div class="smart-badge"><i class="fas fa-bell"></i> Instant Alerts</div>
+          <div class="smart-badge"><i class="fas fa-map-marker-alt"></i> All 36 States</div>
+        </div>
+        <div style="margin-top:28px;">
+          <a href="#shop" class="btn-primary"><i class="fas fa-shopping-bag"></i> Get Your Smart BP Device</a>
+        </div>
+      </div>
+
+      <!-- Live Device Card -->
+      <div class="device-visual">
+        <div class="alert-pill"><i class="fas fa-exclamation-triangle"></i> High BP Detected — Dr. Obi notified</div>
+        <div class="device-card-main">
+          <div class="device-header">
+            <span class="device-brand">SmartCare BP-X1</span>
+            <span class="device-live"><span class="live-dot"></span>LIVE</span>
+          </div>
+          <div class="device-reading-main">
+            <div class="bp-display" id="heroSys">128<span>/</span><span id="heroDia" style="font-size:2.4rem;">82</span></div>
+            <div class="bp-label">mmHg — Blood Pressure</div>
+            <div class="bp-status-chip normal" id="heroStatus"><i class="fas fa-check-circle"></i> Normal Range</div>
+          </div>
+          <div class="device-metrics">
+            <div class="metric-pill">
+              <div class="val" id="heroHR"><i class="fas fa-heartbeat" style="color:#e63946;font-size:1rem;"></i> 74</div>
+              <div class="lbl">Heart Rate (bpm)</div>
+            </div>
+            <div class="metric-pill">
+              <div class="val" id="heroSpo2">98<span style="font-size:0.9rem;color:var(--teal)">%</span></div>
+              <div class="lbl">SpO₂ Level</div>
+            </div>
+          </div>
+          <svg class="mini-chart" id="heroChart" viewBox="0 0 300 52" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#1560bd"/>
+                <stop offset="100%" style="stop-color:#00a99d"/>
+              </linearGradient>
+            </defs>
+            <path id="heroPath" d="" fill="none" stroke="url(#cg)" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+          <div class="device-qr-row">
+            <div class="qr-box">
+              <svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="#0a1f3c">
+                <rect x="1" y="1" width="7" height="7"/><rect x="2" y="2" width="5" height="5" fill="white"/>
+                <rect x="3" y="3" width="3" height="3"/>
+                <rect x="13" y="1" width="7" height="7"/><rect x="14" y="2" width="5" height="5" fill="white"/>
+                <rect x="15" y="3" width="3" height="3"/>
+                <rect x="1" y="13" width="7" height="7"/><rect x="2" y="14" width="5" height="5" fill="white"/>
+                <rect x="3" y="15" width="3" height="3"/>
+                <rect x="10" y="1" width="1" height="1"/><rect x="10" y="3" width="1" height="2"/>
+                <rect x="10" y="7" width="1" height="1"/><rect x="10" y="10" width="3" height="1"/>
+                <rect x="13" y="10" width="1" height="3"/><rect x="15" y="10" width="1" height="1"/>
+                <rect x="17" y="10" width="3" height="1"/><rect x="10" y="13" width="1" height="1"/>
+                <rect x="12" y="13" width="2" height="2"/><rect x="15" y="13" width="1" height="2"/>
+                <rect x="17" y="13" width="1" height="1"/><rect x="10" y="15" width="1" height="2"/>
+                <rect x="12" y="16" width="2" height="1"/><rect x="15" y="16" width="2" height="1"/>
+                <rect x="18" y="15" width="2" height="2"/><rect x="17" y="17" width="3" height="2"/>
+                <rect x="10" y="18" width="3" height="2"/><rect x="14" y="19" width="1" height="1"/>
+              </svg>
+            </div>
+            <div class="qr-text">
+              <h4>Scan to Link Device</h4>
+              <p>Download app & activate your monitor</p>
+              <div class="qr-id">DEVICE ID: MCP-2025-NG-08741</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="how-section">
+      <div class="how-title-row">
+        <div class="section-label" style="justify-content:center;"><i class="fas fa-circle" style="font-size:6px"></i> Simple 4-Step Process</div>
+        <h2>How It Works</h2>
+        <p>From unboxing to real-time monitoring in under 3 minutes</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item">
+          <div class="step-counter">01</div>
+          <div class="step-num"><i class="fas fa-shopping-bag"></i></div>
+          <h3>Purchase Device</h3>
+          <p>Order your Smart BP-X1 device. Shipping to all 36 states within 48 hrs.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-counter">02</div>
+          <div class="step-num"><i class="fas fa-qrcode"></i></div>
+          <h3>Scan QR Code</h3>
+          <p>Scan the unique QR code on your device to download the MedCare app instantly.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-counter">03</div>
+          <div class="step-num"><i class="fas fa-link"></i></div>
+          <h3>Link & Register</h3>
+          <p>Create your secure patient account. Your device is automatically paired to your profile.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-counter">04</div>
+          <div class="step-num"><i class="fas fa-stethoscope"></i></div>
+          <h3>Live Monitoring</h3>
+          <p>Every reading you take syncs instantly. Your assigned doctor is notified of any abnormal values.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIVE INTERACTIVE DASHBOARD -->
+    <div class="dashboard-section">
+      <div class="dash-header">
+        <div class="section-label" style="justify-content:center;"><i class="fas fa-circle" style="font-size:6px"></i> Patient Portal Preview</div>
+        <h2>Live Health Dashboard</h2>
+        <p>This is what you and your doctor see in real-time. Click "Simulate Reading" to see it in action.</p>
+      </div>
+
+      <div class="dashboard-container">
+        <!-- Top bar -->
+        <div class="dash-topbar">
+          <div class="dash-topbar-left">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Patient" class="dash-avatar">
+            <div class="dash-user">
+              <h4>Emeka Okonkwo</h4>
+              <p>Patient ID: MCP-0087 · Lagos, Nigeria</p>
+            </div>
+          </div>
+          <div class="dash-topbar-right">
+            <div class="dash-chip"><i class="fas fa-wifi"></i> Device Online</div>
+            <div class="dash-chip"><i class="fas fa-user-md"></i> Dr. Obi Monitoring</div>
+            <div class="dash-chip" id="dashStatusChip"><i class="fas fa-check-circle"></i> Normal</div>
+          </div>
+        </div>
+
+        <div class="dash-body">
+          <!-- Main area -->
+          <div class="dash-main">
+            <!-- KPIs -->
+            <div class="dash-kpis">
+              <div class="kpi-card">
+                <div class="kpi-icon">🩸</div>
+                <div class="kpi-val" id="kpiSys">128/82</div>
+                <div class="kpi-lbl">Blood Pressure</div>
+                <div class="kpi-change good" id="kpiBPChange">↓ 3 mmHg from last</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-icon">❤️</div>
+                <div class="kpi-val" id="kpiHR">74 <span style="font-size:0.9rem">bpm</span></div>
+                <div class="kpi-lbl">Heart Rate</div>
+                <div class="kpi-change good" id="kpiHRChange">→ Steady</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-icon">💧</div>
+                <div class="kpi-val" id="kpiSpo2">98<span style="font-size:0.9rem">%</span></div>
+                <div class="kpi-lbl">SpO₂ Level</div>
+                <div class="kpi-change good">✓ Excellent</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-icon">📊</div>
+                <div class="kpi-val" id="kpiReadings">12</div>
+                <div class="kpi-lbl">Readings Today</div>
+                <div class="kpi-change good">↑ +2 vs yesterday</div>
+              </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-label">
+              24-Hour BP Trend
+              <div class="chart-legend">
+                <span class="leg-dot leg-sys">Systolic</span>
+                <span class="leg-dot leg-dia">Diastolic</span>
+                <span class="leg-dot leg-hr">Heart Rate</span>
+              </div>
+            </div>
+            <canvas id="dashChart" height="160"></canvas>
+
+            <!-- History table -->
+            <div class="history-table">
+              <h4>Recent Readings</h4>
+              <div class="hist-header">
+                <div class="hist-row"><span>Time</span><span>BP (mmHg)</span><span>HR</span><span>SpO₂</span><span>Status</span></div>
+              </div>
+              <div class="hist-body" id="histBody"></div>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <div class="dash-sidebar">
+            <h4>Your Doctor</h4>
+            <div class="doctor-on-duty">
+              <div class="doc-duty-top">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=100&q=80" alt="Doctor" class="doc-duty-img">
+                <div class="doc-duty-info">
+                  <h5>Dr. Chukwuemeka Obi</h5>
+                  <p>Cardiologist · 18 yrs exp.</p>
+                </div>
+              </div>
+              <div class="doc-duty-status"><span class="live-dot"></span> On Duty — Monitoring</div>
+              <div style="margin-top:14px;">
+                <div class="doc-message-bubble" id="docMessage">
+                  Good morning Emeka! Your readings look stable today. Keep up the hydration and light exercise. I'll check in after your evening reading. 👍
+                </div>
+                <div class="doc-actions">
+                  <button class="doc-btn call" onclick="simulateCall()"><i class="fas fa-phone-alt"></i> Call</button>
+                  <button class="doc-btn msg" onclick="simulateMessage()"><i class="fas fa-comment-dots"></i> Message</button>
+                </div>
+              </div>
+            </div>
+
+            <h4>Notifications</h4>
+            <div class="notifications-list" id="notifList">
+              <div class="notif-item n">
+                <i class="fas fa-check-circle notif-icon"></i>
+                <div><p>Morning reading synced successfully</p><span>08:32 AM</span></div>
+              </div>
+              <div class="notif-item n">
+                <i class="fas fa-check-circle notif-icon"></i>
+                <div><p>Weekly report sent to Dr. Obi</p><span>07:00 AM</span></div>
+              </div>
+              <div class="notif-item w">
+                <i class="fas fa-exclamation-triangle notif-icon"></i>
+                <div><p>Slightly elevated reading yesterday at 9PM</p><span>Yesterday</span></div>
+              </div>
+            </div>
+
+            <button class="simulate-btn" onclick="simulateReading()">
+              <i class="fas fa-sync-alt" id="simIcon"></i> Simulate New Reading
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section id="departments">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-circle" style="font-size:6px"></i> Medical Departments</div>
+      <h2 class="section-title">Choose Your Department</h2>
+      <p class="section-sub">Select a specialty below to browse available doctors and book your consultation instantly.</p>
+    </div>
+    <div class="dept-grid" id="deptGrid"></div>
+    <div class="doctors-section" id="doctorsSection">
+      <div class="doctors-header">
+        <h2 id="deptTitle">Available Doctors</h2>
+        <span id="deptCount" style="color:var(--gray);font-size:0.85rem;"></span>
+      </div>
+      <div class="doctors-grid" id="doctorsGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-circle" style="font-size:6px"></i> Medical Equipment</div>
+      <h2 class="section-title">Shop Certified Equipment</h2>
+      <p class="section-sub">Browse our range of FDA-certified medical devices and healthcare supplies delivered to your doorstep.</p>
+    </div>
+    <div class="shop-tabs" id="shopTabs"></div>
+    <div class="products-grid" id="productsGrid"></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;"><i class="fas fa-circle" style="font-size:6px"></i> Why MedCare Pro</div>
+      <h2 class="section-title" style="text-align:center;">Healthcare You Can Trust</h2>
+      <p class="section-sub" style="margin:auto;">We've built a platform that puts patients first from booking to recovery, every step is seamless.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-user-md"></i></div>
+        <h3>Board-Certified Specialists</h3>
+        <p>Every doctor on our platform is verified, licensed, and reviewed by our medical advisory board.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-video"></i></div>
+        <h3>Telemedicine Ready</h3>
+        <p>Consult via HD video from anywhere. Same quality care without leaving your home.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Secure & Confidential</h3>
+        <p>HIPAA-compliant data protection. Your health records are encrypted and private.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><i class="fas fa-shipping-fast"></i></div>
+        <h3>Fast Equipment Delivery</h3>
+        <p>Certified medical equipment delivered within 48 hours anywhere in Nigeria.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;"><i class="fas fa-circle" style="font-size:6px"></i> Patient Stories</div>
+      <h2 class="section-title" style="text-align:center;">What Our Patients Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Booked a cardiologist within 10 minutes. The consultation was thorough and the doctor was incredibly professional. Best healthcare experience I've had in Lagos."</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Patient" class="testi-avatar">
+          <div><h4>Emeka Okonkwo</h4><p>Heart Patient — Lagos</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The blood pressure monitor I ordered arrived in two days. Top quality, certified device at a reasonable price. The customer service team was also very helpful."</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" alt="Patient" class="testi-avatar">
+          <div><h4>Adaeze Nwosu</h4><p>Equipment Buyer — Abuja</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The dermatology telemedicine session saved me so much time. Dr. Afolabi diagnosed my condition accurately and sent my prescription digitally. Incredible!"</p>
+        <div class="testi-author">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80" alt="Patient" class="testi-avatar">
+          <div><h4>Fatima Bello</h4><p>Skin Care Patient — Kano</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-label"><i class="fas fa-circle" style="font-size:6px"></i> Get In Touch</div>
+        <h2>We're Here<br>to Help You</h2>
+        <p>Have questions about a consultation or product? Our support team is available 24/7 to assist you with anything you need.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone-alt"></i></div>
+            <div><h4>Phone & WhatsApp</h4><p>+234 800 MEDCARE (633 2273)</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div><h4>Email Support</h4><p>supportcarepro@ng.org</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><h4>Head Office</h4><p>14 Adeola Odeku St, Victoria Island, Lagos</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+            <div><h4>Working Hours</h4><p>Mon–Sat: 7am – 9pm | Emergency: 24/7</p></div>
+          </div>
+        </div>
+        <div class="social-links">
+          <a class="social-link s-fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-link s-tw" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+          <a class="social-link s-ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="social-link s-yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a class="social-link s-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a class="social-link s-li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <h3>Send Us a Message</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="contactName" placeholder="Your full name">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="contactEmail" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" id="contactPhone" placeholder="+234 ...">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select id="contactSubject">
+            <option value="">Select a topic</option>
+            <option>Book an Appointment</option>
+            <option>Equipment Inquiry</option>
+            <option>Technical Support</option>
+            <option>Billing & Payments</option>
+            <option>General Question</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="contactMsg" rows="4" placeholder="How can we help you?"></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;justify-content:center;" onclick="submitContact()">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+          <span class="logo-text">Connecting<span>Care</span> Pro</span>
+        </div>
+        <p class="footer-desc">Nigeria's most trusted digital healthcare platform. Connecting patients with certified doctors and premium medical equipment since 2020.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul>
+          <li><a href="#">Cardiology</a></li>
+          <li><a href="#">Dermatology</a></li>
+          <li><a href="#">Neurology</a></li>
+          <li><a href="#">Orthopedics</a></li>
+          <li><a href="#">Pediatrics</a></li>
+          <li><a href="#">Gynecology</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Book Consultation</a></li>
+          <li><a href="#">Shop Equipment</a></li>
+          <li><a href="#">Patient Portal</a></li>
+          <li><a href="#">Telemedicine</a></li>
+          <li><a href="#">Health Blog</a></li>
+          <li><a href="#">Emergency Care</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h4>Health Newsletter</h4>
+        <p>Get weekly health tips, news, and exclusive offers from our specialists.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address" id="newsletterEmail">
+          <button onclick="subscribeNewsletter()"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 ConnectingCare Pro. All rights reserved. | RC: 1234567 (CAC Nigeria)</span>
+      <span>
+        <a href="#" style="color:rgba(255,255,255,0.5);margin:0 10px;text-decoration:none;">Privacy Policy</a>
+        <a href="#" style="color:rgba(255,255,255,0.5);margin:0 10px;text-decoration:none;">Terms of Service</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CALL BUTTON -->
+<a href="tel:+2348003332273" class="float-call" title="Call Us Now"><i class="fas fa-phone-alt"></i></a>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="bookingModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-form" id="modalForm">
+      <h2>Book Appointment</h2>
+      <p class="modal-sub" id="modalSub">Complete the form to schedule your consultation</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" id="bookFirst" placeholder="First name">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" id="bookLast" placeholder="Last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="bookEmail" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="bookPhone" placeholder="+234 ...">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Preferred Date</label>
+          <input type="date" id="bookDate">
+        </div>
+        <div class="form-group">
+          <label>Preferred Time</label>
+          <select id="bookTime">
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Consultation Type</label>
+        <select id="bookType">
+          <option>In-Person Visit</option>
+          <option>Video Consultation</option>
+          <option>Phone Consultation</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Brief Description of Symptoms</label>
+        <textarea id="bookNote" rows="3" placeholder="Describe your main concern..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center;" onclick="submitBooking()">
+        <i class="fas fa-calendar-check"></i> Confirm Appointment
+      </button>
+    </div>
+    <div class="modal-success" id="modalSuccess">
+      <div class="success-icon">🎉</div>
+      <h3>Appointment Confirmed!</h3>
+      <p>Your appointment has been successfully booked. You'll receive a confirmation email and SMS within the next few minutes. See you soon!</p>
+      <button class="btn-primary" style="margin:24px auto 0;padding:12px 32px;" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- CART PANEL -->
+<div class="cart-panel" id="cartPanel">
+  <div class="cart-header">
+    <h3><i class="fas fa-shopping-cart" style="color:var(--teal);margin-right:10px;"></i> Your Cart</h3>
+    <button class="cart-close" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Your cart is empty</p></div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none;">
+    <div class="cart-total"><span>Total</span><span id="cartTotal">₦0</span></div>
+    <button class="btn-checkout" onclick="checkout()"><i class="fas fa-lock"></i> Secure Checkout</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMsg"></span></div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+<script src="./script.js"></script>
+</body>
+</html>
